@@ -1,0 +1,44 @@
+<div class="date">
+    <div class="date--1">
+        <h4 class="date__title">ДАТА</h4>
+        <mat-form-field class="form-field">
+            <input matInput [matDatepicker] ="myDatePicker1" [min]="minDate">
+            <mat-datepicker-toggle [for]="myDatePicker1" matSuffix></mat-datepicker-toggle>
+            <mat-datepicker #myDatePicker1>
+                <mat-datepicker-actions>
+                    <button mat-flat-button matDatepickerCancel>Отменить</button>
+                    <button mat-flat-button color="primary" matDatepickerApply>Установить дату</button>
+                  </mat-datepicker-actions>
+            </mat-datepicker>
+        </mat-form-field>
+    
+    </div>
+      
+    <div class="date--2">
+        <h4 class="date__title">ДАТА</h4>
+        <mat-form-field class="form-field">
+            <input matInput [matDatepicker] ="myDatePicker2" [min]="minDate">
+            <mat-datepicker-toggle [for]="myDatePicker2" matSuffix></mat-datepicker-toggle>
+            <mat-datepicker #myDatePicker2>
+                <mat-datepicker-actions>
+                    <button mat-flat-button matDatepickerCancel>Отменить</button>
+                    <button mat-flat-button color="primary" matDatepickerApply>Установить дату</button>
+                  </mat-datepicker-actions>
+            </mat-datepicker>
+        </mat-form-field>
+    
+    </div>
+</div>
+<mat-checkbox class="cb__underDate"><p>Бессрочная акция</p></mat-checkbox>
+
+<!-- <igx-time-picker
+#timePicker
+[(ngModel)]="date"
+[mode]="mode"
+[minValue]="'16:00:00'"
+[spinLoop]='false'
+[inputFormat]="format">
+    <label igxLabel>Time</label>
+</igx-time-picker> -->
+
+  

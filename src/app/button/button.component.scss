@@ -1,0 +1,28 @@
+.btn {
+    // position: absolute;
+    // left: 50%;
+    // top: 90%;
+    margin-top: 32px;
+    margin-left: 46.5%;
+}
+
+::ng-deep {
+
+    .mat-raised-button,
+    .mat-fab,
+    .mat-mini-fab {
+        background: #0085CF;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px !important;
+
+
+        color: #DAEBF8;
+        border-radius: 16px !important;
+        padding: 19px 20px !important;
+        width: 412px;
+        height: 64px;
+    }
+}

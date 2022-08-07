@@ -1,0 +1,45 @@
+.banner {
+    background-color: #002233;
+    width: 1128px;
+    height: 838px;
+    border-radius: 20px;
+    margin-right: 81px;
+    position: relative;
+
+    h3 {
+        padding: 32px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+    }
+}
+
+
+.components__date-time {
+    display: flex;
+}
+.banners{
+    display: flex;
+    margin-top: 64px;
+    justify-content: center;
+    flex-wrap: wrap;
+    // &__inner{
+    //     width: 100%;
+    // }
+}
+.banner-2 {
+    max-width: 386px;
+    height: 201px;
+    background: #002233;
+    border-radius: 20px;
+    // width: 100%;
+    // order: -1;
+}
+.banner + .banner-2{
+    width: 100%;
+}
+app-button{
+    width: 100%;
+}

@@ -1,0 +1,212 @@
+.form-field {
+    background-color: #00364B;
+    width: 248px;
+    height: 64px;
+    border-radius: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #DAEBF8;
+
+    svg {
+        color: #DAEBF8;
+    }
+}
+
+.date {
+    margin: 32px;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.date__title {
+    padding-bottom: 8px;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #DAEBF8;
+}
+
+.cb__underDate {
+    padding-left: 32px;
+    margin: 0;
+    margin-bottom: 26px;
+
+    p {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        align-items: center;
+        color: #DAEBF8;
+    }
+}
+
+::ng-deep {
+    .mat-button-wrapper {
+
+        svg {
+            height: 30px !important;
+            position: absolute;
+            left: 20px;
+            width: 30px !important;
+            background-image: url(../../assets/images/Vector.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-right: 5px;
+            fill: transparent;
+            // display: none;
+        }
+    }
+
+    .mat-form-field-appearance-legacy .mat-form-field-infix {
+        position: absolute !important;
+        left: 40%;
+
+    }
+
+    .mat-button,
+    .mat-icon-button,
+    .mat-stroked-button {
+        background: transparent;
+        color: transparent;
+    }
+
+    .mat-datepicker-toggle,
+    .mat-datepicker-content .mat-calendar-next-button,
+    .mat-datepicker-content .mat-calendar-previous-button {
+        background-color: transparent;
+    }
+
+    .mat-calendar-table {
+        background: #001C2B;
+        ;
+    }
+
+    .mat-calendar-body-cell-content.mat-focus-indicator {
+        font-family: 'Montserrat' !important;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+
+        text-align: center;
+
+        /* Text/400 */
+
+        color: #DAEBF8;
+    }
+
+    .mat-calendar-body-disabled>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+        color: rgb(255 255 255 / 50%);
+    }
+
+    .mat-calendar-table-header th,
+    .mat-calendar-body-label,
+    .mat-calendar-next-button::after,
+    .mat-calendar-previous-button::after {
+        color: #DAEBF8;
+    }
+
+    .mat-calendar-header,
+    .mat-calendar-content,
+    .mat-datepicker-content .mat-calendar {
+        background-color: #001C2B;
+    }
+
+    .mat-datepicker-content {
+        background-color: #001C2B;
+        position: relative;
+    }
+
+    .mat-datepicker-actions {
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 8px;
+        justify-content: flex-end;
+        align-items: flex-end !important;
+        // width: 280px;
+        // height: 48px;
+    }
+
+    .mat-flat-button.mat-primary {
+        background: #0085CF;
+        border-radius: 12px;
+        width: 280px;
+        height: 48px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+
+
+        /* Text/400 */
+
+        color: #DAEBF8;
+    }
+
+    .mat-stroked-button:not([class*=mat-elevation-z]),
+    .mat-flat-button:not([class*=mat-elevation-z]):nth-child(1) {
+        width: 280px;
+        height: 48px;
+        background: #002A40;
+        border-radius: 12px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+
+
+        /* Text/400 */
+
+        color: #DAEBF8;
+
+    }
+    .mat-button-ripple.mat-ripple, .mat-button-focus-overlay{
+        background: transparent;
+    }
+    .mat-button-wrapper {
+        color: #DAEBF8;
+    }
+    .mat-button .mat-button-wrapper>*, .mat-flat-button .mat-button-wrapper>*, .mat-stroked-button .mat-button-wrapper>*, .mat-raised-button .mat-button-wrapper>*, .mat-icon-button .mat-button-wrapper>*, .mat-fab .mat-button-wrapper>*, .mat-mini-fab .mat-button-wrapper>*{
+        color: transparent;
+    }
+    .mat-datepicker-content{
+        border-radius: 12px 12px 0px 0px !important;
+    }
+    .mat-datepicker-content .mat-calendar{
+        border-radius: 12px 12px 0px 0px !important;
+
+    }
+    .mat-calendar-header{
+        border-radius: 12px 12px 0px 0px;
+    }
+
+}
+
+// .mat-form-field-flex {
+//     display: inline-flex;
+//     align-items: baseline;
+//     box-sizing: border-box;
+//     width: 100%;
+//     flex-direction: row-reverse;
+// }
+// .mat-form-field-appearance-legacy .mat-form-field-underline {
+//     height: 0;
+// }

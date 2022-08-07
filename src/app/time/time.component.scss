@@ -1,0 +1,107 @@
+.timepikers {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 32px;
+
+    &__title {
+        margin-bottom: 0;
+        padding-bottom: 8px;
+    }
+
+    h4 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #DAEBF8;
+
+    }
+
+    input {
+        width: 248px;
+        height: 64px;
+        background: #00364B;
+        border-radius: 16px;
+        border: none;
+        outline: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+
+        text-align: center;
+
+        color: #DAEBF8;
+
+    }
+
+    &__inner {
+        position: relative;
+    }
+}
+
+.input::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    // background-color: #DAEBF8;
+    background-image: url(../../assets/images/Time.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 23px;
+    top: 47px;
+    bottom: 0;
+}
+
+.input::before {
+    content: '';
+    position: absolute;
+    height: 9px;
+    width: 15px;
+    background-image: url(../../assets/images/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 15px;
+    bottom: 25px;
+}
+
+.timepikers__cb {
+
+
+    margin-top: 15px;
+
+    p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #DAEBF8;
+        // text-align: center;
+        margin-bottom: 0;
+    }
+}
+::ng-deep{
+    div.ngx-mat-timepicker-dialog>mat-dialog-container.mat-dialog-container{
+        background-color: #001C2B;
+    }
+    .mat-toolbar.mat-primary{
+        background-color: #001C2B;
+        color: #DAEBF8;
+    }
+    .cdk-overlay-container, .cdk-global-overlay-wrapper{
+        top: 60px;
+        left: 60px;
+    }
+    // .mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary{
+    //     background-color: #001C2B;
+    // }
+    div.ngx-mat-timepicker-dialog>mat-dialog-container.mat-dialog-container div[mat-dialog-actions]{
+        justify-content: space-between !important;
+    }
+}

@@ -1,0 +1,13 @@
+<div class="select">
+    <div class="select__title">
+        <h4>Выберите город<a href="#"><img src="../../assets/images/Fill 13.svg" alt=""></a></h4>
+    </div>
+    <mat-form-field appearance="fill">
+        <mat-label>Выберите город</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let city of cities" [value]="city.value">
+                {{city.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
